@@ -1,0 +1,28 @@
+{
+  "name": "tests-demo",
+  "version": "1.0.0",
+  "description": "单元测试 UI测试 功能测试",
+  "main": "index.js",
+  "scripts": {
+    "unit:init": "karma init",
+    "unit:start": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loverofmusic/tests-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loverofmusic/tests-demo/issues"
+  },
+  "homepage": "https://github.com/loverofmusic/tests-demo#readme",
+  "devDependencies": {
+    "jasmine-core": "^3.5.0",
+    "karma": "^4.4.1",
+    "karma-coverage": "^2.0.1",
+    "karma-jasmine": "^3.1.1",
+    "karma-phantomjs-launcher": "^1.0.4"
+  }
+}
