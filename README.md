@@ -1,4 +1,4 @@
-# 单元测试 / UI 测试 / 功能测试
+# 单元测试 / UI 测试 / 功能测试 /service 测试
 
 ---
 
@@ -56,33 +56,16 @@ coverageReporter: {
 
 ## 功能测试 e2e
 
-## 单元测试
+### npm install selenium-webdriver --save-dev
 
-1. 安装单元测试框架
-   cnpm install karma --save-dev
-   package.json 里
-   初始化 karma init
-   运行 karma start
+需要驱动。。。（其他 e2e 工具 ： nightwatch rize cypress f2etest）
 
-2. 断言库
-   npm install karma-jasmine jasmine-core --save-dev
+### npm run e2e:start (启动功能测试)
 
-3. npm install karma karma-coverage --save-dev
+---
 
-## UI 测试
+## service 测试
 
-npm install -g backstopjs
-backstop init
-backstop test
+### npm i supertest mocha mochawesome --save-dev
 
-## e2e 测试===
-
-UI Recorder
-
-## service 测试===
-
-nodejs api 结果不符合
-
-/Users/zhangcong/yideng/tests-demo/backstop_data/bitmaps_reference/qq_map_0_document_0_phone.png
-
-/Users/zhangcong/yideng/tests-demo/backstop_data/bitmaps_reference/qq_map_0_document_0_iphone.png
+### npm run service:start (启动 service 测试，生成报告)

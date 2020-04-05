@@ -7,7 +7,9 @@
     "unit:init": "karma init",
     "unit:start": "karma start",
     "ui:init": "backstop init",
-    "ui:start": "backstop test"
+    "ui:start": "backstop test",
+    "e2e:start": "node ./tests/e2e/index.spec.js",
+    "service:start": "node ./mochaRunner.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,11 @@
     "karma": "^4.4.1",
     "karma-coverage": "^2.0.1",
     "karma-jasmine": "^3.1.1",
-    "karma-phantomjs-launcher": "^1.0.4"
+    "karma-phantomjs-launcher": "^1.0.4",
+    "koa": "^2.11.0",
+    "mocha": "^7.1.1",
+    "mochawesome": "^5.0.0",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "supertest": "^4.0.2"
   }
 }
