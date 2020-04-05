@@ -1,35 +1,8 @@
-# tests-demo
-
-## 单元测试 UI 测试 功能测试
-
-## 单元测试===
-
-1. 安装单元测试框架
-   cnpm install karma --save-dev
-   package.json 里
-   初始化 karma init
-   运行 karma start
-
-2. 断言库
-   npm install karma-jasmine jasmine-core --save-dev
-
-3. npm install karma karma-coverage --save-dev
-
-## UI 测试===
-
-npm install -g backstopjs
-backstop init
-backstop test
-
-## e2e 测试===
-
-UI Recorder
-
-## service 测试===
-
-nodejs api 结果不符合
+# 单元测试 / UI 测试 / 功能测试
 
 ---
+
+## 单元测试
 
 ### npm i karma --save-dev（单元测试框架）
 
@@ -61,4 +34,55 @@ coverageReporter: {
 },
 ```
 
-### npm run unit:start (单元测试启动,生成覆盖率报告，可以在浏览器打开查看了)
+### npm run unit:start (单元测试启动 生成覆盖率报告 可以在浏览器打开查看了)
+
+---
+
+## UI 测试
+
+### npm i backstopjs -g
+
+### npm run ui:init
+
+(初始化 backstopjs 生成 backstop_data 文件夹 和 backstop.json 文件)
+
+### 配置 backstop.json
+
+( backstop_data 中新建文件夹 bitmaps_reference，存 ui 图, 用来和线上对比)
+
+### npm run ui:start (启动 backstop 生成测试报告)
+
+---
+
+## 功能测试 e2e
+
+## 单元测试
+
+1. 安装单元测试框架
+   cnpm install karma --save-dev
+   package.json 里
+   初始化 karma init
+   运行 karma start
+
+2. 断言库
+   npm install karma-jasmine jasmine-core --save-dev
+
+3. npm install karma karma-coverage --save-dev
+
+## UI 测试
+
+npm install -g backstopjs
+backstop init
+backstop test
+
+## e2e 测试===
+
+UI Recorder
+
+## service 测试===
+
+nodejs api 结果不符合
+
+/Users/zhangcong/yideng/tests-demo/backstop_data/bitmaps_reference/qq_map_0_document_0_phone.png
+
+/Users/zhangcong/yideng/tests-demo/backstop_data/bitmaps_reference/qq_map_0_document_0_iphone.png

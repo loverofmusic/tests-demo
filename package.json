@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "unit:init": "karma init",
-    "unit:start": "karma start"
+    "unit:start": "karma start",
+    "ui:init": "backstop init",
+    "ui:start": "backstop test"
   },
   "repository": {
     "type": "git",
